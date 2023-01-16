@@ -1,0 +1,320 @@
+/* Key Frames */
+@keyframes fade-up{
+  0%{
+    opacity:0;
+    transform: translateY(-30px) scale(0.9);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes fade-up2{
+  0%{
+    opacity:0;
+    transform: translateY(-30px) scale(0.9);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+.prompt{
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  opacity: 99%;
+  max-width: 260px;
+  margin: 200px auto 100px;
+  padding: 10px 45px 30px 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 10px;
+  animation: fade-up 0.5s;
+}
+
+.prompt .greeting{
+  margin-top: 0;
+  position: relative;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  bottom: -20px;
+}
+
+.prompt .question{
+  display: flex;
+  font-size: 15px;
+  align-items: center;
+  z-index: 1;
+  background: #F2F2F2;
+  opacity: 99%;
+  max-width: 260px;
+  margin: 0px auto 20px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 12px;
+  outline: 0;
+  border-radius: 10px;
+}
+
+.prompt button1{
+    text-transform: uppercase;
+    outline: 0;
+    border-radius: 10px;
+    background: #13c133;
+    width: 50%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.button-68 {
+    appearance: none;
+    backface-visibility: hidden;
+    background-color: #27ae60;
+    border-radius: 8px;
+    border-style: none;
+    box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: 1.5;
+    outline: none;
+    overflow: hidden;
+    padding: 10px 40px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transform: translate3d(0, 0, 0);
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+    margin-right: 30px;
+    animation: fade-up1 1.5s;
+}
+
+.button-68:hover {
+  background-color: #1e8449;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: .35s;
+}
+
+.button-68:active {
+  transform: translateY(2px);
+  transition-duration: .35s;
+}
+
+.button-68:hover {
+  box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
+}
+
+.button-69 {
+    appearance: none;
+    backface-visibility: hidden;
+    background-color: #ae2727;
+    border-radius: 8px;
+    border-style: none;
+    box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: 1.5;
+    outline: none;
+    overflow: hidden;
+    padding: 10px 40px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transform: translate3d(0, 0, 0);
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+    animation: fade-up1 1.5s;
+}
+
+.button-69:hover {
+  background-color: #841e1e;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: .35s;
+}
+
+.button-69:active {
+  transform: translateY(2px);
+  transition-duration: .35s;
+}
+
+.button-69:hover {
+  box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
+}
+
+.credits p{
+    font-family: "Poppins",sans-serif;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    animation: fade-up2 1s;
+}
+
+.prompt .message{
+  position: relative;
+  margin: 0;
+  font-weight: 650;
+  text-transform: none;
+  color: #000000;
+  font-size: 12px;
+  top: -10px;
+}
+
+.prompt .message a{
+  color: #0e81df;
+  text-decoration: none;
+}
+
+.popup{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  background-size: cover;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  margin: 0;
+}
+
+.popup.active{
+  visibility: visible;
+  opacity: 1;
+  animation: fade-up3 0.5s;
+}
+
+.popup video{
+  position: relative;
+  max-width: 480px;
+  outline: none;
+  box-shadow: 0 0 10px 10px rgba(255,255,255,.4);
+}
+
+.popup .close{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  max-width: 35px;
+  cursor: pointer;
+  filter: invert(1);
+}
+
+@media (max-width: 991px){
+  .popup video{
+    max-width: 90%;
+}}
+
+.popup1{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  background-size: cover;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  margin: 0;
+}
+
+.popup1.active{
+  visibility: visible;
+  opacity: 1;
+  animation: fade-up4 0.5s;
+}
+
+.popup1 video{
+  position: relative;
+  max-width: 480px;
+  outline: none;
+  box-shadow: 0 0 10px 10px rgba(255,255,255,.4);
+}
+
+.popup1 .close{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  max-width: 35px;
+  cursor: pointer;
+  filter: invert(1);
+}
+
+@media (max-width: 991px){
+  .popup1 video{
+    max-width: 90%;
+}}
+
+@keyframes fade-up4{
+  0%{
+    opacity:0;
+    transform: translateY(-30px) scale(0.9);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes fade-up3{
+  0%{
+    opacity:0;
+    transform: translateY(-30px) scale(0.9);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes fade-up1{
+  0%{
+    opacity:0;
+    transform: translateY(30px) scale(0.9);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}

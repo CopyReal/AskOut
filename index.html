@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Hello :D</title>
+</head>
+<body>
+    <div class="prompt">
+        <p class="greeting">HELLO <span class="auto-type"></span></p>
+        <prompt>
+            <p class="question">I know I've asked you this already but Wanna maybe get something in 7/11? Like a drink or food?</p>
+                <p class="message">Date: Anytime You Are Available</p>
+                <p class="message">Time: 4:30-5:00 pm (Class Dismissal)</p>
+                <p class="message">Location: <a href="https://goo.gl/maps/GmufHL1k9c8gp3z5A">Click Here</a></p>
+                <a href="#" class="button-68" role="button" onclick="show();">Yes</a>
+                <a href="#" class="button-69" role="button" onclick="show1();">No</a>
+        </prompt>
+    </div>
+    <div class="popup">
+        <video src="yes.mp4" controls="true"></video>
+        <span class="close" onclick="show();">&#10006;</span>
+    </div>
+    <div class="popup1">
+        <video src="no.mp4" controls="true"></video>
+        <span class="close" onclick="show1();">&#10006;</span>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["NAME"],
+            typeSpeed: 150,
+            backSpeedL: 150,
+            loop: true
+        })
+    </script>
+
+    <script>
+        function show(){
+            var popup = document.querySelector(".popup");
+            var video = document.querySelector("video");
+            popup.classList.toggle("active");
+            video.pause();
+        }
+    </script>
+
+    <script>
+        function show1(){
+            var popup1 = document.querySelector(".popup1");
+            var video1 = document.querySelector("video");
+            popup1.classList.toggle("active");
+            video1.pause();
+        }
+    </script>
+
+    <div class="credits">
+        <p>Created By Joss Capacite</p>
+    </div>
+
+</body>
+</html>
